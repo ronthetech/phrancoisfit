@@ -9,16 +9,20 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div>
+    <>
       <Head>
         <title>Phrancois Fit</title>
         <meta name="description" content="Phrancois Fit web app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar title="Phrancois Fit" />
-      {children}
-      <Footer title="Phrancois Fit" />
-    </div>
+      <>
+        <Navbar title="Phrancois Fit" />
+        <main className="main">
+          {children}
+          <Footer />
+        </main>
+      </>
+    </>
   );
 };
 

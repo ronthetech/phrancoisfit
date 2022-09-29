@@ -2,15 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { GiWeightLiftingUp } from "react-icons/gi";
 
-interface FooterProps {
-  title: string;
-}
+//interface FooterProps {}
 
-const Footer = ({ title }: FooterProps) => {
+const Footer = () => {
   return (
     <footer>
       <Link href="/">
-        <h2>{title}</h2>
+        <h2>Home</h2>
       </Link>
       <a href="">
         <Image src="" alt="" />

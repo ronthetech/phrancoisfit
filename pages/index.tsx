@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
+      <>
         <h1 className="">Home</h1>
         <WorkoutDetails title={"Pushups"} reps={20} load={0} minutes={""} />
         <WorkoutDetails
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           load={40}
           minutes={""}
         />
-      </main>
+      </>
 
       {/* <footer className="">
         <a href="" target="_blank" rel="noopener noreferrer">
