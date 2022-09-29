@@ -1,22 +1,25 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import WorkoutDetails from "../components/WorkoutDetails/WorkoutDetails";
-import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className="">
       <Head>
-        <title>Phrancois Fit</title>
-        <meta name="description" content="Phrancois Fit web app" />
+        <title>Phrancois Fit Home</title>
+        <meta name="description" content="Home | Phrancois Fit web app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="">
-        <Link href="/workouts">Workouts</Link>
-        <WorkoutDetails title={"Pushups"} reps={20} load={0} minutes={0} />
-        <h1 className="">Workouts</h1>
+        <h1 className="">Home</h1>
+        <WorkoutDetails title={"Pushups"} reps={20} load={0} minutes={""} />
+        <WorkoutDetails
+          title={"Bench Press"}
+          reps={20}
+          load={40}
+          minutes={""}
+        />
       </main>
 
       {/* <footer className="">
